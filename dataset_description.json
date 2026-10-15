@@ -17,5 +17,6 @@
         "Tel Aviv University Ethics Committee",
         "Helsinki Institutional Committee of the Sheba Tel-Hashomer Medical Center"
     ],
-    "HowToAcknowledge": "Please cite Zvi, Kerem, Aviv & Yeshurun (PNAS, in press)."
+    "HowToAcknowledge": "Please cite Zvi, Kerem, Aviv & Yeshurun (PNAS, in press).",
+    "DatasetDOI": "doi:10.18112/openneuro.ds008941.v1.0.0"
 }
