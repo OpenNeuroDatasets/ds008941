@@ -1,0 +1,68 @@
+# In-group neural alignment serves as a biomarker of social identity
+
+Raw fMRI data for:
+Yohay Zvi (1), Nitai Kerem (1), Eldad Aviv (2), Yaara Yeshurun (1, 2).
+In-group neural alignment serves as a biomarker of social identity.
+PNAS (accepted; DOI to be added).
+
+(1) Sagol School of Neuroscience, Tel Aviv University, Tel Aviv, Israel
+(2) School of Psychological Sciences, Tel Aviv University, Tel Aviv, Israel
+
+Yaara Yeshurun Lab, Tel Aviv University.
+Contact: Yohay Zvi (yohayzvi@gmail.com), Yaara Yeshurun (yaara.yeshurun@gmail.com)
+
+## Participants
+42 healthy, right-handed native Hebrew speakers (ages 21-33):
+- Religious (N = 21, 13 female): sub-rel01 ... sub-rel21
+- Secular   (N = 21, 14 female): sub-sec01 ... sub-sec21
+Group membership is listed in participants.tsv. Participants were assigned to
+groups by a preliminary questionnaire; religious participants were recruited from
+a less conservative sector to ensure familiarity with the stimuli without offense.
+The study was approved by Tel Aviv University's Ethics Committee and by the
+Helsinki Institutional Committee of the Sheba Tel-Hashomer Medical Center, and
+all participants gave written informed consent.
+
+## Task: free-viewing video task
+A single free-viewing video task. Participants passively watched three short
+Hebrew social media and TV news videos, one per run, with no task during viewing.
+Because this is naturalistic viewing, there are no events.tsv files.
+- task-neutral: weather report (2:07)
+- task-kosher:  video presented by a religious spokesman describing the risks of
+                non-institutional Kosher certification (2:23)
+- task-chametz: news report on hospitals banning Chametz during Passover (2:33)
+Each video was preceded by 8 s and followed by 10 s of grey screen, so the video
+starts 8 s (8 volumes) after the first volume of each run. The neutral video was
+always shown first; the order of the Kosher and Chametz videos varied across
+participants.
+
+After each video, participants rated agreement, interest and emotional engagement
+on a visual analogue scale (0-100) inside the scanner. These ratings, the
+post-scan questionnaires and the stimuli are available on OSF (see below), not in
+this dataset.
+
+### Run length
+The number of volumes per run varies across participants (137-220). Recording was
+stopped at different points relative to the in-scanner rating questions: for some
+participants before the questions, for others during or after them. Volumes after
+the end of the 10 s post-video grey screen may therefore include the rating period
+and should not be treated as stimulus-driven.
+sub-rel18 task-neutral is shorter (137 volumes) due to a technical problem with
+the scanner; 128 TRs of this video were used in the analyses reported in the paper.
+
+## MRI acquisition
+Siemens Prisma 3T, 64-channel head-neck coil.
+- T1w: MPRAGE, TR = 2400 ms, TE = 2.78 ms, TI = 1000 ms, flip angle 8 deg,
+  bandwidth 200 Hz/px, GRAPPA 2, 0.9 mm isotropic.
+- BOLD: multiband gradient-echo EPI (CMRR), multiband factor 6, TR = 1000 ms,
+  TE = 30 ms, flip angle 60 deg, 2 mm isotropic, 72 slices.
+Acquisition parameters are taken from the DICOM headers and are listed in full in
+each image's JSON sidecar. DICOMs were converted to NIfTI with dcm2niix
+(v1.0.20190902). T1w images were defaced with quickshear (v1.2.0), using each
+participant's brain mask.
+
+## Related resources
+Stimuli, behavioral data and analysis code (OSF):
+https://osf.io/a9xqj/
+GitHub repository: https://github.com/YohayZvi/religion-neuro-sync
+
+

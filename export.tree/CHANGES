@@ -1,0 +1,2 @@
+1.0.0 2026-10-15
+  - Initial release (v1.0.0). Raw BIDS dataset for Zvi, Kerem, Aviv & Yeshurun, “In-group neural alignment serves as a biomarker of social identity” (PNAS, in press). 42 participants (21 religious, 21 secular), each with a defaced T1w and three free-viewing BOLD runs (task-neutral, task-kosher, task-chametz).
