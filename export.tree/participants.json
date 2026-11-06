@@ -1,0 +1,9 @@
+{
+    "group": {
+        "Description": "Participant group",
+        "Levels": {
+            "religious": "Religious participants",
+            "secular": "Secular participants"
+        }
+    }
+}
